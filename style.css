@@ -3,35 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
-html,body{
-    height: 100%;
-    width: 100%;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
 }
-#box1{
-    height: 500px;
+hr{
     width: 500px;
-    background-color: red;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    
+    height: 3px;
+    margin: 0 auto;
+    background-color: black;
 }
-#box1 #div1{
-    height: 400px;
-    width: 400px;
+#board{
+    width: 450px;
+    height: 450px;
     background-color: yellow;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
-#box1 #div2{
-    height: 300px;
-    width: 300px;
-    background-color: green;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+
+.tile{
+    width: 147px;
+    height: 147px;
+    font-size: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.horizontal-line{
+    border-bottom: 3px solid black;
+}
+.vertical-line{
+    border-right: 3px solid black;
+}
+
+.winner{
+    background-color: lightgray;
+    color: red;
 }

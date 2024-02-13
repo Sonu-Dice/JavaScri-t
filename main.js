@@ -476,7 +476,241 @@
 // Collections of items
 
 // Create Array
-let mark=[78,45,76,90,54,34]
-console.log(mark);
-let heros=["Avi","Nitin","Azhar","Ayush","Aryan","Tina"];
-console.log(heros);
+// let mark=[78,45,76,90,54,34]
+// console.log(mark);
+// let heros=["Avi","Nitin","Azhar","Ayush","Aryan","Tina"];
+// for(let i=0;i<heros.length;i++){
+//         console.log(heros[i]);
+// }
+// for(let el of heros){
+//         console.log(el);
+// }
+
+// let cities=["delhi","pune","punjab","Rajstan"]
+// for(let el of cities){
+//         console.log(el);
+// }
+
+// Lets Practice Question
+// for a given array with marks of students ->[85,97,44,37,76,60] find the average marks of the entire class.
+// let marks=[85,97,44,37,76,60];
+// let sum=0
+// for(let val of marks){
+//         sum+=val;
+// }
+// let avg=sum/marks.length;
+// console.log(`avg marks of the class=${avg}`);
+
+
+//  offer
+// let items=[250,645,300,900,50];
+// let i=0
+// for(let val of items){
+//         console.log(`value at index &(index) = ${val}`);
+//         let offer=val/10
+//         items[i]=items[i]-offer
+//         console.log(`value after offer = ${items[i]}`);
+//         i++
+// }
+
+// for(let i=0;i<items.length;i++){
+//         let offer=items[i]/10;
+//         items[i]-=offer;
+// }
+// console.log(items);
+
+// Array Methods
+// 1 Push(): add to end
+// let items=["potato","apple","litchi","tomati"];
+// items.push("chips","burger","paneer")
+// console.log(items);
+// 2 Pop(): delete from end to return
+// let items=["potato","apple","litchi","tomati"];
+// items.pop()
+// console.log(items);
+// 3 toString(): converts array to string
+// let items=["potato","apple","litchi","tomato"];
+// console.log(items.toString());
+
+// 4 concat(): joins multiple arrays & returns result.
+// let items=["potato","apple","litchi","tomati"];
+// let dc_heros=["Superman","batman"];
+// let heros=items.concat(dc_heros)
+// console.log(heros);
+
+// 5 unshift(): add to start
+// let items=["potato","apple","litchi","tomati"];
+// items.unshift("chilli")
+// console.log(items);
+// 6 shift(): delete from start & return
+// let items=["potato","apple","litchi","tomati"];
+// items.shift()
+// console.log(items)
+
+// slice(): returns a piece of the array
+// slice(startldx,endldx)
+// let items=["potato","apple","litchi","tomati"];
+// console.log(items);
+// console.log(items.slice(1,3));
+
+
+// splice(): change original array (add,remove,replace)
+// splice(startldx,delCount,newEl1)
+// let items=[1,2,3,4,5,6,7,8,9,10];
+// items.splice(3,1)
+// console.log(items);
+
+// practice
+// let arr=["Blomberg","Microsoft","uber","Google","IBM","Netflix"]
+// arr.shift()
+// console.log(arr);
+// arr.splice(1,1,"ola")
+// console.log(arr);
+// arr.push("Amazon")
+// console.log(arr);
+
+
+//      Lecture 5
+// Function and Methods
+// Block of code that performs a specific task, can be invoke whenever needed.
+
+//      Function Definition                             Function call
+        // function functionname(){                     functionName()
+                // do some work
+        // }
+
+        // function functionName(param1,param2){
+        //         do some work
+        // }
+
+// function myFunction(msg){
+//         console.log(msg);
+// }
+// myFunction("I am sonu yadav");
+
+// function sum(a,b){
+//         console.log(a+b);
+// }
+// sum(1,3)
+
+// 1 Arrow function
+// Compact way of writing a function
+// const functionName=(param1,param2)=>{
+        // do some work
+// }
+
+// sum function
+// function sum(a,b){
+//         return a+b;
+// }
+//          OR
+// const sum=(a,b)=>{
+//         return a*b
+// }
+// console.log(sum(3,5));
+
+
+
+// Multiplication function
+// function mul(a,b){
+//         return a*b
+// }
+// let arrowMul=(a,b)=>{
+//         return a*b
+// }
+// arrowMul=7;
+
+// const str=()=>{
+//         console.log("Hello world");
+// }
+
+// Qs.  Create a function using the "function" keywords that takes a string as an arguments & returns the number of vowels in the string.
+// function countVowels(str){
+//         let count=0;
+//         for(const char of str){
+//                 if(char==="a" || char==="e" || char==="i" || char==="o" || char==="u"){
+//                         count++;
+//                 }
+//         }
+//         return count;
+// }
+
+// const countVow=(str)=>{
+//         let count=0;
+//         for(const char of str){
+//                 if(char==="a" || char==="e" || char==="i" || char==="o" || char==="u"){
+//                         count++;
+//                 }
+//         }
+//         return count;
+// }
+
+
+// forEach Loop in Array
+// arr.forEach(callbackfunctio)
+// callbackFunction: Here, it is a function to exceute for each in the array
+
+// A callback is a function passed as an argument to another function.
+// arr.forEach((val)=>{
+        // console.log(val);
+// })
+
+// let arr=["dellhi"]
+// arr.forEach((val,idx)=>{
+//         console.log(val.toUpperCase(),idx,arr);
+// })
+
+// let str=[1,2,0,3,4,5,0,3,6,7,8,1,2,3,4,5,6,7,1,2,3,4,0,5,6,7,1,2,3,4,5,6,7]
+// let count=0;
+// for(let i=0;i<=str.length;i++){
+//         if(str[i]==0){
+//                 count++;
+                 
+//         }
+// }
+// console.log("Zero is",count,"times");
+
+
+// function statement
+// function sayhello(){
+//         console.log("Hello Sonu");
+// }
+// sayhello();
+// sayhello();
+
+// function expression
+// let a=function hi(){
+//         console.log("Hi! Sonu");
+// }
+// a();
+
+// param and argumnets
+// function say(name){
+//         console.log("Good mornining "+name);
+
+// }
+// say("sonu");
+// say("Raman");
+
+
+// let a=function say(name,age){
+//         console.log("good Morning "+name);
+//         console.log("your age is "+age);
+// }
+// a("sonu", 22)
+
+
+// es6 fat arrow function
+// let x=()=>{
+//         console.log("sonu");
+// }
+// x();
+// let x=(name)=>{
+//         console.log("Hello "+name);
+// }
+// x("sonu");
+// let x=(name,age)=>{
+//         console.log("Good Morning "+name);
+//         console.log("age "+age);
+// }
+// x("sonu",22);
