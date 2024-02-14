@@ -635,7 +635,7 @@
 //         return count;
 // }
 
-// const countVow=(str)=>{
+// function countVow(str){
 //         let count=0;
 //         for(const char of str){
 //                 if(char==="a" || char==="e" || char==="i" || char==="o" || char==="u"){
@@ -709,8 +709,56 @@
 //         console.log("Hello "+name);
 // }
 // x("sonu");
-// let x=(name,age)=>{
+// let x=(name,age,moble)=>{
 //         console.log("Good Morning "+name);
 //         console.log("age "+age);
+//         console.log("Your Phone no. "+moble);
 // }
-// x("sonu",22);
+// x("sonu",22,9125403859);
+
+
+
+// let x=function(){
+//         console.log("Your name is: Sonu yadav");
+//         console.log("Your age is: 22");
+//         console.log("Your mobile number is: 9125403859");
+//         console.log("your course is: FullStack development");
+// }
+// x()
+// let say=(name,age,mobile,course)=>{
+//         console.log("Your name is:",name);
+//         console.log("Your age is:",age);
+//         console.log("Your moble number is:",mobile);
+//         console.log("Your course is:",course);
+// }
+// say("Sonu yadav",22,9125403859,"FullStack Development")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Count Vowels using user input
+let  vol=prompt("Enter Only Leters")
+let count=0;
+for(let i=0;i<=vol.length;i++){
+        if(vol[i]=="a" || vol[i]=="A" || vol[i]=="e" || vol[i]=="E" || vol[i]=="i" || vol[i]=="I" || vol[i]=="o" || vol[i]=="O" || vol[i]=="u" || vol[i]=="U"){
+                count++;
+        }
+        
+}
+console.log(count);
