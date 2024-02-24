@@ -735,30 +735,193 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Count Vowels using user input
-let  vol=prompt("Enter Only Leters")
-let count=0;
-for(let i=0;i<=vol.length;i++){
-        if(vol[i]=="a" || vol[i]=="A" || vol[i]=="e" || vol[i]=="E" || vol[i]=="i" || vol[i]=="I" || vol[i]=="o" || vol[i]=="O" || vol[i]=="u" || vol[i]=="U"){
-                count++;
-        }
+// let  vol=prompt("Enter Only Leters")
+// let count=0;
+// for(let i=0;i<=vol.length;i++){
+//         if(vol[i]=="a" || vol[i]=="A" || vol[i]=="e" || vol[i]=="E" || vol[i]=="i" || vol[i]=="I" || vol[i]=="o" || vol[i]=="O" || vol[i]=="u" || vol[i]=="U"){
+//                 count++;
+//         }
         
-}
-console.log(count);
+// }
+// console.log(count);
+
+// function say(name){
+//         console.log("Hey " + name + " your are nice");
+//         console.log("Hey " + name + " your are good");
+//         console.log("Hey " + name + " your Tshirt is very nice");
+//         console.log("Hey " + name + " your are nice");
+// }
+
+// let n=5;
+// for(let i=1;i<=n;i++){
+//         for(let j=1;j<=n-i;j++){
+//                 process.stdout.write(" ")
+//         }
+//         for(let k=0;k<2*i-1;k++){
+//                 process.stdout.write("*")
+
+//         }
+//         console.log();
+// }
+
+// function say(number){
+//         return (number.split("").reverse().join(""))
+// }
+// console.log(say("12345"));
+
+
+
+
+
+// function say(f,s){
+//         console.log(f**s);
+// }
+// say(4,2)
+// function sum(a,b,c,d){
+//         console.log(a+b+c+d);
+// }
+// sum(2,4,6,8)
+
+
+// function say(str){
+//         let count=0;
+//         for(let i=0;i<=str.length;i++){
+//                 if(str[i]=="A" || str[i]=="E" || str[i]=="i" || str[i]=="O" || str[i]=="U" || str[i]=="a" || str[i]=="e" || str[i]=="i" || str[i]=="o" || str[i]=="u" ){
+//                         count++;
+//                 }
+//         }
+//         return count;
+// }
+// console.log(say("The quick brown fox"));
+ 
+
+// function say(name,currentyear,birthyear){
+//         console.log("Hello",name,"Birth age",currentyear-birthyear);
+        
+// }
+// say("Sonu",2023,2002);
+
+// callBack function
+// aisa function jo kisi dusare function ko argument ki tarah pass kiya jata hai to us function callBack function kahate hai.
+// let arr=["pune","delhi","Gujrat","Hariyana"];
+// arr.forEach((idx,val)=>{
+//         console.log(val);
+// })
+// let arr=[1,2,3,4,5]
+// let calcSquare=(num)=>{
+//         console.log(num**2);
+// }
+// arr.forEach(calcSquare);
+
+// Map Method
+// map method foreach() method ke kaphi similar hota hai jaise foreach ka kam hota hai array ke ek ek index pr ja kar ek ek value ke liye kisi operation ko perform krana vaisa ho kuchh kam hamare liye map() method krke deta hai. but different between foreach and map method map ek new array return krke deta hai, foreach ke andar koi new array create nhi hota hai.
+
+// Map Method Syntax
+// arr.map(callbackfunction(value, index,array))
+// Example
+
+// let num=[1,2,3,4,5];
+// num.map((val)=>{
+//         return console.log(val);
+// })
+
+
+// let num=[1,2,3,4,5];
+// let newArr=num.map((val)=>{
+//         return val**2;
+// })
+// console.log(newArr);
+
+
+// Filter method
+// Creates a new array of elements that give true for a condtion/fliter
+// filter method ka kam hota hai array ke ek ek indivisual index pr ja kar jo hamari value hoti hai unme se kuchh value filter out krke krna based on some condition.
+// Ex: all even elements
+// let arr=[1,2,3,4,5,6,7,8,9,10]
+// let newArr=arr.filter((val)=>{
+//         return val>3;
+// })
+// console.log(newArr);
+
+
+// Reduce Method
+// Performs some operations & reduce the array to a single value. it return that single value.
+// Reduce method ka kam hota hai agar aap ke koi array hai, to us array ke upar kuchh kuchh hame operation perform krne aur last me un operation ko use krke hamare pass single value aani chahiye.
+
+// let arr=["ram","karan","sam"]
+// let sumArr=arr.reduce((res,curr)=>{
+//         return res+curr;
+// })
+// console.log(sumArr);
+
+// Print largest number using reduce method
+// let arr=[12,32,65,22,34,23]
+// let largest=arr.reduce((prev,curr)=>{
+//         return prev>curr?prev:curr;
+// })
+// console.log(largest);
+
+// let studentsMark=[55,46,32,91,98,54,76,99];
+// let newarr=studentsMark.filter((val)=>{
+//         return val>90;
+// })
+// console.log(newarr);
+
+// let n=parseFloat(prompt("Enter number"));
+// let arr=[];
+// for(let i=1;i<=n;i++){
+//         arr[i-1]=i;
+// }
+// console.log(arr);
+// let sum=arr.reduce((prev,curr)=>{
+//         return prev+curr;
+// })
+// console.log(sum);
+// let product=arr.reduce((prev,curr)=>{
+//         return prev*curr
+// })
+// console.log(product);
+
+// let user=parseFloat(prompt("enter a number"));
+// let arr=[];
+// for(let i=1;i<=user;i++){
+//         arr[i-1]=i;
+// }
+// console.log(arr);
+// let sum=arr.reduce((prev,curr)=>{
+//         return prev+curr;
+// })
+// console.log(sum);
+
+// let fact=arr.reduce((prev,curr)=>{
+//         return prev*curr;
+// })
+// console.log(fact);
+
+// let arr=[1,2,3,4,5,3,7,4,7,4,9,2];
+// let largest=arr.reduce((prev,curr)=>{
+//         return prev>curr?prev:curr;
+// })
+// console.log(largest);
+
+// const calage=(curyear,biryear)=>{
+//         return curyear-biryear;
+// }
+
+// const retirement=(name,currentyear,birthyear)=>{
+//         let age=calage(currentyear,birthyear);
+//         if(age>60){
+//                 console.log(`Current age of ${name} is ${age} years. he/she has already retired ${age-60} years ago. he/she in the year ${currentyear-(age-60)}`);
+//         }
+//         else if(age===60){
+//                 console.log(`Current age of ${name} is ${age} years. he/she will retire in the same year`)
+//         }
+//         else{
+//                 console.log(`Current age of ${name} is ${age} years. he/she will retire after ${60-age} years. he/she will retire in the year ${currentyear+(60-age)}`)
+//         }
+// }
+// retirement("Sonu",2024,1960);
+
+const a=10;
+a="sonu"

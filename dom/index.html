@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(18, 18, 62);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container .calc{
+            position: relative;
+            width: 250px;
+            height: 300px;
+            border-radius: 15px;
+            box-shadow: 1px 1px 20px 1px #fff;
+            padding: 10px;
+        }
+        .calc input{
+            width: 100%;
+            height: 40px;
+            margin-bottom: 20px;
+            background-color: transparent;
+            border: 2px solid #fff;
+            border-radius: 20px;
+            font-size: 13px;
+            padding-left: 20px;
+            font-weight: 700;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .calc input::placeholder{
+            color: #fff;
+        }
+        
+        .calc button{
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: 700;
+            /* margin: 0 auto; */
+            display: inline-block;
+            position: absolute;
+            left: 80px;
+            border-radius: 15px;
+            border: none;
+            color: rgb(18, 18, 62);
+            transition: 0.3s ease;
+        }
+        .calc button:hover{
+            background-color: #ffffffba;
+        }
+        .calc button:active{
+            background-color: blue;
+            color: #fff;
+        }
+        
+        .calc p{
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .calc h1{
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="calc">
+            <h1>Simple Calculater</h1>
+    <input type="text" id="first" placeholder="Enter First Number *">
+    <input type="text" placeholder="Enter Operator *" id="num">
+    <input type="text" id="second" placeholder="Enter Second Number *">
+    <p id="demo"></p>
+    <button onclick="calculator()">Submit</button>
+</div>
+</div>
+    <script>
+        const calculator=()=>{
+            let first=parseFloat(document.getElementById("first").value)
+            let operator=document.getElementById("num").value
+            let second=parseFloat(document.getElementById("second").value)
+            if(operator=="+"){
+                let sum=document.getElementById("demo").innerHTML=`Your result is:- ${first+second}`;
+            }
+            else if(operator=="-"){
+                let sub=document.getElementById("demo").innerHTML=`Your result is:- ${first-second}`;
+            }
+            else if(operator=="*"){
+                let multi=document.getElementById("demo").innerHTML=`Your result is:- ${first*second}`;
+            }
+            else if(operator=="/"){
+                let divide=document.getElementById("demo").innerHTML=`Your result is:- ${first/second}`;
+            }
+            else if(operator=="**"){
+                let square=document.getElementById("demo").innerHTML=`Your result is:- ${first**second}`;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="first" type="text" placeholder="Enter First Number">
+    <input id="oper" type="text" placeholder="Enter Operator +/-/*/">
+    <input id="second" type="text" placeholder="Enter second number">
+    <p id="demo"></p>
+    <button onclick="calc()">Submit</button>
+
+
+    <script>
+        const calc=() =>{
+            let first=parseFloat(document.getElementById("first").value)
+            let operator=document.getElementById("oper").value
+            let second=parseFloat(document.getElementById("second").value)
+            if(operator== "+"){
+                let sum=document.getElementById("demo").innerHTML=first+second
+            }
+            else if(operator=="-"){
+                let sum=document.getElementById("demo").innerHTML=first-second
+            }
+            else if(operator=="*"){
+                let sum=document.getElementById("demo").innerHTML=first*second
+            }
+            else if(operator=="/"){
+                let sum=document.getElementById("demo").innerHTML=first/second
+            }
+            else if(operator=="**"){
+                let sum=document.getElementById("demo").innerHTML=first**second
+            }
+            else{
+                console.log("Please Enter Valid Number");
+            }
+
+        }
+    </script>
+</body>
+</html>

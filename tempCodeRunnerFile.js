@@ -1,5 +1,3 @@
-let x=(name,age)=>{
-        console.log("Good Morning "+name);
-        console.log("age "+age);
+function say(number){
+        return (number.split("").reverse().join(""))
 }
-x("sonu",22);

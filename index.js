@@ -598,3 +598,23 @@
 // }
 
 
+// Write a JavaScript function that returns a string that has letters in alphabetical order.
+// Example string: 'webmaster'
+// Expected Output: 'abeemrstw'
+
+// function alphabates(str){
+//   return str.split("").sort().join("")
+// }
+// console.log(alphabates("webmaster"));
+
+// Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word into upper case.
+// function say(str){
+//   var array1=str.split(" ");
+//   var newarray1=[];
+//   for(let i=0;i<array1.length;i++){
+//     newarray1.push(array1[i].charAt(0).toUpperCase()+array1[i].slice(1));
+//   }
+//   return newarray1.join(" ")
+// }
+// console.log(say("sonu yadav"));
+
